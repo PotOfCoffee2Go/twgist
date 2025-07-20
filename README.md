@@ -1,4 +1,4 @@
-# gist-wikis
+# twgist
 Store TiddlyWiki tiddlers in a GitHub Gist
 
 # TiddlyWiki stored in a GitHub Gist
@@ -11,9 +11,12 @@ There are two node scripts `./twgist.js` to help in creating a TiddlyWiki popula
 ## Install the scripts
 
 ```
-git clone https://github.com/PotOfCoffee2Go/gist-wikis.git
-cd gist-wikis
+npm install -g https://github.com/PotOfCoffee2Go/twgist.git
 ```
+
+> To uninstall `npm uninstall -g twgist`
+
+Linux users may need to prefix `sudo ` depending on their permission settings.
 
 I will be using `my-wiki` as the directory name of a wiki as an example.
 
@@ -44,7 +47,7 @@ Save the Gist as public or secret - your choice.
 Once saved, the path of the gist will end in a long number displayed in the browser address bar. Copy that number - it is the 'Gist Id' which is needed to create your wiki. Once created you will no longer need the Id unless re-creating or creating/copying on another machine. 
 
 ## Create a 'server' edition wiki
-From the `gist-wikis` directory:
+From the `twgist` directory:
 
 ```
 node ./twgist my-wiki {paste-gist-id-here}

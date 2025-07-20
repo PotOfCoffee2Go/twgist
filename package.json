@@ -6,13 +6,13 @@
     "TiddlyWiki",
     "Gist"
   ],
-  "homepage": "https://github.com/PotOfCoffee2Go/gist-wikis#readme",
+  "homepage": "https://github.com/PotOfCoffee2Go/twgist#readme",
   "bugs": {
-    "url": "https://github.com/PotOfCoffee2Go/gist-wikis/issues"
+    "url": "https://github.com/PotOfCoffee2Go/twgist/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/PotOfCoffee2Go/gist-wikis.git"
+    "url": "git+https://github.com/PotOfCoffee2Go/twgist.git"
   },
   "license": "MIT",
   "author": "PotOfCoffee2Go",
