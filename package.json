@@ -1,0 +1,34 @@
+{
+  "name": "twgist",
+  "version": "1.0.0",
+  "description": "Gist TiddlyWiki tiddler store",
+  "keywords": [
+    "TiddlyWiki",
+    "Gist"
+  ],
+  "homepage": "https://github.com/PotOfCoffee2Go/gist-wikis#readme",
+  "bugs": {
+    "url": "https://github.com/PotOfCoffee2Go/gist-wikis/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PotOfCoffee2Go/gist-wikis.git"
+  },
+  "license": "MIT",
+  "author": "PotOfCoffee2Go",
+  "type": "commonjs",
+  "main": "twgist.js",
+  "bin": {
+    "twgist": "./twgist.js"
+  },
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "commander": "^14.0.0"
+  },
+  "devDependencies": {}
+}
