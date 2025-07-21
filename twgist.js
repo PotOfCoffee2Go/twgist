@@ -28,7 +28,6 @@ program
 	.description('create a TiddlyWiki from a GitHub Gist.')
 	.argument('<wiki>', 'directory to init a server edition wiki')
 	.requiredOption('-g, --gistid  <gistid>', 'gist id that contains tiddlers')
-	.option('-s, --server [port]', 'start server after command (default port: "8080")')
 	.action((dir, options) => {
 		twInit(dir, options);
 	});
