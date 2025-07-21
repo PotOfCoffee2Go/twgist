@@ -18,8 +18,9 @@ program
 	.command('status')
 	.description('git status of tiddlers in wiki')
 	.argument('[wiki]', 'TiddlyWiki directory to display status', '.')
+	.option('-s, --server [port]', 'start server after command (default port: "8080")')
 	.action((dir, options) => {
-		twStatus(dir);
+		twStatus(dir, options);
 	});
 
 program
