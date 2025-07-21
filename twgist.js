@@ -37,7 +37,6 @@ program
 	.command('pull')
 	.description('Pull tiddlers from GitHub Gist')
 	.argument('[wiki]', 'TiddlyWiki directory to pull tiddlers into', '.')
-	.option('-m, --message <string>', 'commit message', 'Wiki Updates')
 	.option('-s, --server [port]', 'start server after command (default port: "8080")')
 	.action((dir, options) => {
 		twPull(dir, options);
