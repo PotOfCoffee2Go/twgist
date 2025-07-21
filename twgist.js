@@ -28,16 +28,19 @@ program
 	.description('create a TiddlyWiki from a GitHub Gist.')
 	.argument('<wiki>', 'directory to init a server edition wiki')
 	.requiredOption('-g, --gistid  <gistid>', 'gist id that contains tiddlers')
+	.option('-s, --server [port]', 'start server after command (default port: "8080")')
 	.action((dir, options) => {
-		twInit(dir, options.gistid);
+		twInit(dir, options);
 	});
 
 program
 	.command('pull')
 	.description('Pull tiddlers from GitHub Gist')
 	.argument('[wiki]', 'TiddlyWiki directory to pull tiddlers into', '.')
+	.option('-m, --message <string>', 'commit message', 'Wiki Updates')
+	.option('-s, --server [port]', 'start server after command (default port: "8080")')
 	.action((dir, options) => {
-		twPull(dir);
+		twPull(dir, options);
 	});
 
 program
@@ -45,8 +48,9 @@ program
 	.description('Upsteam tiddlers to GitHub Gist')
 	.argument('[wiki]', 'TiddlyWiki directory to push', '.')
 	.option('-m, --message <string>', 'commit message', 'Wiki Updates')
+	.option('-s, --server [port]', 'start server after command (default port: "8080")')
 	.action((dir, options) => {
-		twPush(dir, options.message);
+		twPush(dir, options);
 	});
 
 program.parse();
