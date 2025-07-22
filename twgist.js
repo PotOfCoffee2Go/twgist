@@ -23,12 +23,12 @@ function myParseInt(value) {
 
 program
 	.name('twgist')
-	.description('CLI to store a TiddlyWiki in a GitHub Gist')
+	.description('CLI to store TiddlyWikis to GitHub Gists')
 	.version(pkg.version);
 
 program
 	.command('status')
-	.description('git status of tiddlers in wiki')
+	.description('Git status of tiddlers in wiki')
 	.argument('[wiki]', 'tiddywiki server editon wiki directory', '.')
 	.option('-s, --server', 'start server after command')
 	.option('-p, --port <port>', 'server port', myParseInt, 8080)
@@ -40,7 +40,7 @@ program
 
 program
 	.command('init')
-	.description('create a TiddlyWiki from a GitHub Gist.')
+	.description('Create a TiddlyWiki from a GitHub Gist.')
 	.argument('<wiki>', 'directory to init a server edition wiki')
 	.requiredOption('-g, --gistid  <gistid>', 'gist id that contains tiddlers')
 	.action((dir, options) => {
