@@ -1,13 +1,22 @@
 #!/usr/bin/env node
 
-const { Command } = require('commander');
-const program = new Command();
+const commander = require('commander');
+const program = new commander.Command();
 
 const pkg = require('./package.json');
 const {twStatus} = require('./lib/status');
 const {twInit} = require('./lib/init');
 const {twPull} = require('./lib/pull');
 const {twPush} = require('./lib/push');
+
+function myParseInt(value) {
+	// parseInt takes a string and a radix
+	const parsedValue = parseInt(value, 10);
+	if (isNaN(parsedValue)) {
+		throw new commander.InvalidArgumentError('Not a number.');
+	}
+	return parsedValue;
+}
 
 program
 	.name('twgist')
@@ -17,8 +26,10 @@ program
 program
 	.command('status')
 	.description('git status of tiddlers in wiki')
-	.argument('[wiki]', 'TiddlyWiki directory to display status', '.')
-	.option('-s, --server [port]', 'start server after command (default port: "8080")')
+	.argument('[wiki]', 'tiddywiki server editon wiki directory', '.')
+	.option('-s, --server', 'start server after command')
+	.option('-p, --port <port>', 'server port', myParseInt, 8080)
+	.option('-l, --log', 'display recent commits')
 	.action((dir, options) => {
 		twStatus(dir, options);
 	});
@@ -35,8 +46,10 @@ program
 program
 	.command('pull')
 	.description('Pull tiddlers from GitHub Gist')
-	.argument('[wiki]', 'TiddlyWiki directory to pull tiddlers into', '.')
-	.option('-s, --server [port]', 'start server after command (default port: "8080")')
+	.argument('[wiki]', 'tiddywiki server editon wiki directory', '.')
+	.option('-s, --server', 'start server after command')
+	.option('-p, --port <port>', 'server port', myParseInt, 8080)
+	.option('-l, --log', 'display recent commits')
 	.action((dir, options) => {
 		twPull(dir, options);
 	});
@@ -44,9 +57,11 @@ program
 program
 	.command('push')
 	.description('Upsteam tiddlers to GitHub Gist')
-	.argument('[wiki]', 'TiddlyWiki directory to push', '.')
+	.argument('[wiki]', 'tiddywiki server editon wiki directory', '.')
 	.option('-m, --message <string>', 'commit message', 'Wiki Updates')
-	.option('-s, --server [port]', 'start server after command (default port: "8080")')
+	.option('-s, --server', 'start server after command')
+	.option('-p, --port <port>', 'server port', myParseInt, 8080)
+	.option('-l, --log', 'display recent commits')
 	.action((dir, options) => {
 		twPush(dir, options);
 	});
