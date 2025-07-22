@@ -1,6 +1,6 @@
 created: 20250722044507871
-log_option_list: --oneline [[-n 5]] --graph --decorate
-modified: 20250722111359572
+log_option_list: --oneline [[-n 6]] --graph --decorate
+modified: 20250722112553865
 tags: 
 title: twgist settings
 type: text/vnd.tiddlywiki
