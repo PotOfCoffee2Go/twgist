@@ -29,6 +29,7 @@
   },
   "dependencies": {
     "commander": "^14.0.0",
-    "fs-extra": "^11.3.0"
+    "fs-extra": "^11.3.0",
+    "tiddlywiki": "^5.3.7"
   }
 }
