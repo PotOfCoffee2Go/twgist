@@ -1,0 +1,16 @@
+closer: twgist-tab-close
+created: 20250722194636782
+list: welcome-introduction welcome-settings
+modified: 20250722222650472
+tags: 
+title: Welcome
+type: text/vnd.tiddlywiki
+
+[[twgist|https://github.com/PotOfCoffee2Go/twgist]] is a Command-line Interface (CLI) tool which uses [[TiddlyWiki|https://tiddlywiki.com]] and [[Git|https://git-scm.com]] commands to store 'server' edition [[TiddlyWiki on Node.js|https://tiddlywiki.com/static/Installing%2520TiddlyWiki%2520on%2520Node.js.html]] tiddlers in [[GitHub Gists|https://github.com]].
+
+<<tabs "[list[!!closer]]" "" "$:/state/tab/twgist-welcome-tabs">>
+
+<<tabs "[list[!!list]]" "welcome-introduction" "$:/state/tab/twgist-welcome-tabs">>
+
+@@color:aqua;border:1px solid aqua;border-radius:6px;font-size:.9em; &nbsp;  [[Top|Welcome]] &nbsp; @@
+

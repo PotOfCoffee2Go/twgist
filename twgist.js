@@ -50,7 +50,7 @@ program
 
 program
 	.command('pull')
-	.description('Pull tiddlers from GitHub Gist')
+	.description('Pull wiki tiddlers from GitHub Gist')
 	.argument('[wiki]', 'tiddywiki server editon wiki directory', '.')
 	.option('-s, --server', 'start server after command')
 	.option('-p, --port <port>', 'server port', myParseInt, 8080)
@@ -62,7 +62,7 @@ program
 
 program
 	.command('push')
-	.description('Upsteam tiddlers to GitHub Gist')
+	.description('Push wiki tiddlers to GitHub Gist')
 	.argument('[wiki]', 'tiddywiki server editon wiki directory', '.')
 	.option('-m, --message <string>', 'commit message', 'Wiki Updates')
 	.option('-s, --server', 'start server after command')

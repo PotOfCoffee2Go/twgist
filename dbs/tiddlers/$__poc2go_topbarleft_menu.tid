@@ -1,0 +1,9 @@
+created: 20250722201652686
+modified: 20250722201800369
+tags: $:/tags/TopLeftBar
+title: $:/poc2go/topbarleft/menu
+type: text/vnd.tiddlywiki
+
+<div style="font-size: 1.19em;margin-top:-0.2em;margin-left:-0.7em;">
+<$transclude $tiddler="$:/core/ui/Buttons/home"/>
+</div>

@@ -1,0 +1,7 @@
+caption: Settings
+created: 20250722202011277
+modified: 20250722202020840
+title: welcome-settings
+type: text/vnd.tiddlywiki
+
+{{twgist settings}}
