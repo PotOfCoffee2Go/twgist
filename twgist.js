@@ -8,6 +8,9 @@ const {twStatus} = require('./lib/status');
 const {twInit} = require('./lib/init');
 const {twPull} = require('./lib/pull');
 const {twPush} = require('./lib/push');
+const {twConfig} = require('./lib/config');
+
+const settings = twConfig();
 
 function myParseInt(value) {
 	// parseInt takes a string and a radix
@@ -31,6 +34,7 @@ program
 	.option('-p, --port <port>', 'server port', myParseInt, 8080)
 	.option('-l, --log', 'display recent commits')
 	.action((dir, options) => {
+		options.settings = settings;
 		twStatus(dir, options);
 	});
 
@@ -40,6 +44,7 @@ program
 	.argument('<wiki>', 'directory to init a server edition wiki')
 	.requiredOption('-g, --gistid  <gistid>', 'gist id that contains tiddlers')
 	.action((dir, options) => {
+		options.settings = settings;
 		twInit(dir, options);
 	});
 
@@ -51,6 +56,7 @@ program
 	.option('-p, --port <port>', 'server port', myParseInt, 8080)
 	.option('-l, --log', 'display recent commits')
 	.action((dir, options) => {
+		options.settings = settings;
 		twPull(dir, options);
 	});
 
@@ -63,6 +69,7 @@ program
 	.option('-p, --port <port>', 'server port', myParseInt, 8080)
 	.option('-l, --log', 'display recent commits')
 	.action((dir, options) => {
+		options.settings = settings;
 		twPush(dir, options);
 	});
 

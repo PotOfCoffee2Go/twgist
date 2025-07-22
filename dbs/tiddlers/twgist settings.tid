@@ -1,0 +1,14 @@
+created: 20250722044507871
+log_option_list: --oneline [[-n 5]] --graph --decorate
+modified: 20250722111359572
+tags: 
+title: twgist settings
+type: text/vnd.tiddlywiki
+
+Configuration gist for twgist application
+
+<div style="font-family: monospace;">
+
+|Log options |<$edit-text field="log_option_list"/> |
+
+</div>
