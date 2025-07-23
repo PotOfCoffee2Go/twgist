@@ -1,0 +1,27 @@
+caption: pull
+created: 20250723092224313
+modified: 20250723102750424
+title: commands-pull
+type: text/vnd.tiddlywiki
+
+!! pull
+
+<pre class="poc2go-console">
+@@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;twgist pull -s@@
+@@color:#ffce33;cd ./tiddlers@@
+
+@@color:#ffce33;git stash@@
+No local changes to save
+@@color:#ffce33;git pull@@
+Already up to date.
+@@color:#ffce33;git stash pop@@
+No stash entries found.
+
+@@color:#ffce33;cd ..@@
+@@color:#ffce33;tiddlywiki . --listen@@
+@@color:#ff7d33;Serving on <$text text="http://127.0.0.1:8080"/> @@
+@@color:#ff0000;(press ctrl-C to exit)@@
+@@color:#33c7ff;^C@@
+@@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;_@@
+</pre>
+

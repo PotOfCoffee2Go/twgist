@@ -1,0 +1,33 @@
+caption: status
+created: 20250723070845848
+modified: 20250723102215091
+title: commands-status
+type: text/vnd.tiddlywiki
+
+!! status
+In the `init` tab a wiki was initialised in the 'my-wiki' directory. Changing the current directory to 'my-wiki' removes the need to have to enter the [wiki] parameter 'my-wiki'. The default wiki is the current directory.
+
+<pre class="poc2go-console">
+@@color:#33c7ff;twgist status@@ instead of @@color:#33c7ff;twgist status mywiki@@
+</pre>
+
+The `status` command displays the git status of the tiddlers in the wiki.
+
+<pre class="poc2go-console">
+
+@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;cd my-wiki@@
+@@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;twgist status@@
+@@color:#ffce33;cd ./tiddlers@@
+
+@@color:#ffce33;git status@@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+@@color:#ffce33;cd ..@@
+@@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;_@@
+
+</pre>
+
+Note that @@color:#33c7ff;twgist status@@ no longer requires the wiki directory name @@color:#33c7ff;my-wiki@@.

@@ -1,0 +1,14 @@
+caption: Commands
+created: 20250722223818690
+list: commands-init commands-status commands-pull commands-summary
+modified: 20250723101730853
+title: welcome-commands
+type: text/vnd.tiddlywiki
+
+!! Commands
+
+Start with the `init` tab and work across the tabs. Various tips and option examples are shown as you progress along. `Summary` has what options are available for each command.
+
+Green is the @@color:#00ff00;prompt@@, blue are commands @@color:#33c7ff;you enter@@, and yellow are commands displayed by twgist that are @@color:#ffce33;done for you@@.
+
+<<tabs "[list[welcome-commands!!list]]" "commands-summary" "$:/state/tab/twgist-commands-tabs">>

@@ -1,0 +1,49 @@
+caption: Summary
+created: 20250722230509848
+modified: 20250723102254209
+title: commands-summary
+type: text/vnd.tiddlywiki
+
+!! Summary
+twgist commands are designed to run the TiddlyWiki and Git commands needed to perform the task.
+
+
+ (contains the 'tiddlywiki.info' file and the 'tiddlers' sub-directory) The exception is the `twgist init` command which creates the wiki.
+
+
+<pre class="poc2go-console">
+
+|[ ] = optional value|&lt; &gt; = required value|
+
+| Command | Type | Name | Description |<|h
+|init | | |Create a TiddlyWiki from a GitHub Gist |<|
+| |required |&lt;wiki&gt; |TiddyWiki server edition wiki directory |<|
+| |required |-g &lt;gistid&gt;, --gistid &lt;gistid&gt; |Gist ID that contains tiddlers |<|
+
+| Command | Type | Name | Description |<|h
+|status | | |'git status' of tiddlers in wiki |<|
+| |argument |[wiki] |TiddyWiki server edition wiki directory |<|
+| | |<|<| default: '.' (current)|
+| |option |-s, --server |Start WebServer after command |<|
+| |option |-p &lt;port&gt;, --port &lt;port&gt; |WebServer port | default: 8080|
+| |option |-l, --log |Display recent commits |<|
+|&nbsp; |<|<|<|<|
+|&nbsp; |<|<|<|<|
+|pull | | |Pull wiki tiddlers from GitHub Gist |<|
+| |argument |[wiki] |TiddyWiki server edition wiki directory |<|
+| | |<|<| default: '.' (current)|
+| |option |-s, --server |Start WebServer after command |<|
+| |option |-p &lt;port&gt;, --port &lt;port&gt; |WebServer port | default: 8080|
+| |option |-l, --log |Display recent commits |<|
+|&nbsp; |<|<|<|<|
+|push | | |Pull wiki tiddlers from GitHub Gist |<|
+| |argument |[wiki] |TiddyWiki server edition wiki directory |<|
+| | |<|<| default: '.' (current)|
+| |option |-m "&lt;msg&gt;", --message "&lt;msg&gt;" |Commit message | default: "Wiki Updates"|
+| |option |-s, --server |Start WebServer after command |<|
+| |option |-p &lt;port&gt;, --port &lt;port&gt; |WebServer port | default: 8080|
+| |option |-l, --log |Display recent commits |<|
+|&nbsp; |<|<|<|<|
+
+</pre>
+

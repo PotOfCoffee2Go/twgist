@@ -1,26 +1,7 @@
 caption: Introduction
 created: 20250722200626695
-modified: 20250722222528261
+modified: 20250723101810865
 title: welcome-introduction
 type: text/vnd.tiddlywiki
 
-!! Install
-The tool is designed to be globally installed allowing the 'twgist' command to be available regardless of the directory structure of your wikis.
-
-Install with NPM, then run `twgist` for the first time which will build a sub-directory '.twgist' in your user home directory which holds this wiki and default settings. It will also display the summary of commands.
-
-```
-npm install -g https://github.com/PotOfCoffee2Go/twgist.git
-twgist
-```
-
-Linux users may need to prefix the NPM install/uninstall with `sudo` depending on your system permission settings.
-
-!! Uninstall
-```
-npm uninstall -g twgist
-```
-To totally remove the system, also remove the '.twgist' sub-directory from your user home directory.
-
-> If installing a new release , or wish to keep custom settings you have made - then do not delete '.twgist' from your home directory.
-
+!! Introduction

@@ -1,0 +1,16 @@
+caption: Uninstall
+created: 20250723073247267
+modified: 20250723082235614
+title: welcome-uninstall
+type: text/vnd.tiddlywiki
+
+!! Uninstall
+<pre class="poc2go-console">
+
+@@color:#33c7ff;npm uninstall -g twgist@@
+
+</pre>
+
+To totally remove the system, also remove the '.twgist' sub-directory from your user home directory.
+
+> If installing a new release , or wish to keep custom settings you have made - then do not delete '.twgist' from your home directory.

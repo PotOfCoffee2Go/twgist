@@ -1,0 +1,37 @@
+caption: init
+created: 20250723065938829
+modified: 20250723102337736
+title: commands-init
+type: text/vnd.tiddlywiki
+
+!! init
+
+The `twgist init` command has two parameters, both are required - the directory to have TiddlyWiki initialise a 'server' edition wiki; and the GistID of the gist that has the tiddlers to load into the wiki. 
+
+No other options are available.
+
+<pre class="poc2go-console">
+
+@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;twgist init my-wiki &ndash;&ndash;gistid 0ff830fa237ff39b7de3942536cb08ab@@
+@@color:#ffce33;tiddlywiki my-wiki --init server@@
+Copied edition 'server' to my-wiki
+@@color:#ffce33;git clone git@gist.github.com:0ff830fa237ff39b7de3942536cb08ab.git my-wiki/tiddlers@@
+Cloning into 'my-wiki/tiddlers'...
+remote: Enumerating objects: 203, done.
+     . . . 
+Receiving objects: 100% (203/203), 48.19 KiB | 1.07 MiB/s, done.
+Resolving deltas: 100% (109/109), done.
+@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;twgist status my-wiki@@
+@@color:#ffce33;cd my-wiki/tiddlers@@
+
+@@color:#ffce33;git status@@
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+@@color:#ffce33;cd ../..@@
+@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;_@@
+
+</pre>
+
