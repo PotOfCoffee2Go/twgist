@@ -1,7 +1,7 @@
 closer: twgist-tab-close
 created: 20250722194636782
-list: welcome-introduction welcome-install welcome-uninstall welcome-commands welcome-settings
-modified: 20250723073215247
+list: welcome-introduction welcome-install welcome-uninstall welcome-commands welcome-conflicts welcome-settings
+modified: 20250723170551732
 tags: 
 title: Welcome
 type: text/vnd.tiddlywiki

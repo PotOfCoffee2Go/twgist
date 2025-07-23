@@ -4,3 +4,9 @@
   background: black;
   overflow-x: auto;
 }
+.tc-tab-buttons {
+  font-size: 103%;
+}
+summary {
+  font-size: 105%;
+}

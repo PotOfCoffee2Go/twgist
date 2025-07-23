@@ -1,21 +1,23 @@
-caption: status
+caption: Status
 created: 20250723070845848
-modified: 20250723102215091
+modified: 20250723202542272
 title: commands-status
 type: text/vnd.tiddlywiki
 
-!! status
-In the `init` tab a wiki was initialised in the 'my-wiki' directory. Changing the current directory to 'my-wiki' removes the need to have to enter the [wiki] parameter 'my-wiki'. The default wiki is the current directory.
-
+<details><summary> Status </summary>
+<p>
+In the <<commandstabs commands-init Init no>> tab a wiki was initialised in the 'my-wiki' directory. Changing the current directory to 'my-wiki' removes the need to have to enter the [wiki] parameter 'my-wiki'. The default wiki is the current directory.
+</p><p>
 <pre class="poc2go-console">
 @@color:#33c7ff;twgist status@@ instead of @@color:#33c7ff;twgist status mywiki@@
 </pre>
-
+</p><p>
 The `status` command displays the git status of the tiddlers in the wiki.
+</p>
+</details>
 
 <pre class="poc2go-console">
 
-@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;cd my-wiki@@
 @@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;twgist status@@
 @@color:#ffce33;cd ./tiddlers@@
 

@@ -1,0 +1,23 @@
+created: 20250723161703379
+modified: 20250723194724534
+tags: $:/tags/Macro
+title: $:/poc2go/twgist/macros
+type: text/vnd.tiddlywiki
+
+\define welcometabs(tabtid, linktext)
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$action-setfield $tiddler="$:/state/tab/twgist-welcome-tabs--1484882334" text="$tabtid$"/>
+<$action-navigate $to="Welcome"/>
+$linktext$
+</$button>
+\end
+
+
+\define commandstabs(tabtid, linktext, scr="yes")
+<$button class="tc-btn-invisible tc-tiddlylink">
+<$action-setfield $tiddler="$:/state/tab/twgist-commands-tabs--1074676555" text="$tabtid$"/>
+<$action-setfield $tiddler="$:/state/tab/twgist-welcome-tabs--1484882334" text="welcome-commands"/>
+<$action-navigate $to="Welcome" $scroll="$scr$"/>
+$linktext$
+</$button>
+\end

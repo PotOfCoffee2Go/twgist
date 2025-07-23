@@ -1,10 +1,15 @@
-caption: pull
+caption: Pull
 created: 20250723092224313
-modified: 20250723102750424
+modified: 20250723193722327
 title: commands-pull
 type: text/vnd.tiddlywiki
 
-!! pull
+<details><summary> Pull </summary>
+<p>The `twgist pull` command updates tiddlers on the local wiki that have been published (push) to the Gist.
+</p><p>
+The `twgist pull` command is most commonly used with the '-s' option to start the wiki's [[TiddlyWiki WebServer|https://tiddlywiki.com/static/WebServer.html]] after it pulls  tiddlers from the Gist (external source). The WebServer must be restarted to pick up the changes. twgist workflow is designed to handle the restart.
+</p>
+</details>
 
 <pre class="poc2go-console">
 @@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;twgist pull -s@@
@@ -21,6 +26,7 @@ No stash entries found.
 @@color:#ffce33;tiddlywiki . --listen@@
 @@color:#ff7d33;Serving on <$text text="http://127.0.0.1:8080"/> @@
 @@color:#ff0000;(press ctrl-C to exit)@@
+   ... edit tiddlers using browser ...
 @@color:#33c7ff;^C@@
 @@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;_@@
 </pre>

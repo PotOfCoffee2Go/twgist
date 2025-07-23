@@ -1,7 +1,19 @@
 caption: Introduction
 created: 20250722200626695
-modified: 20250723101810865
+modified: 20250723201228777
 title: welcome-introduction
 type: text/vnd.tiddlywiki
 
 !! Introduction
+
+Workflow:
+
+&nbsp;&nbsp;1. @@font-size:107%;<<commandstabs commands-pull "twgist pull -s">>@@ to pull new tiddlers from the Gist and start the WebServer<br>
+&nbsp;&nbsp;2. Make changes to the wiki locally using the browser<br>
+&nbsp;&nbsp;3. `ctrl-c` to stop the web server<br>
+&nbsp;&nbsp;4. Sync with the Gist - do either:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4a.  @@font-size:107%;<<commandstabs commands-pull 'twgist push -s -m "commit message"'>>@@ if wish to save changes to Gist or<br>
+&nbsp;&nbsp;&nbsp;&nbsp;4b. @@font-size:107%;<<commandstabs commands-pull "twgist pull -s">>@@ to get any changes @@font-size:107%;<<commandstabs commands-push pushed>>@@ from other devices<br>
+&nbsp;&nbsp;5. Go to step #2 and repeat<br>
+
+There may be conflicts where your changes clash with someone else - see <<welcometabs welcome-conflicts Conflicts>>

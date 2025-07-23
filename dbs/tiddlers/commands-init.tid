@@ -1,17 +1,17 @@
-caption: init
+caption: Init
 created: 20250723065938829
-modified: 20250723102337736
+modified: 20250723202852804
 title: commands-init
 type: text/vnd.tiddlywiki
 
-!! init
-
+<details><summary> Init </summary>
+<p>
 The `twgist init` command has two parameters, both are required - the directory to have TiddlyWiki initialise a 'server' edition wiki; and the GistID of the gist that has the tiddlers to load into the wiki. 
-
+</p><p>
 No other options are available.
-
+</p>
+</details>
 <pre class="poc2go-console">
-
 @@color:#00ff00;~/wikis $@@ @@color:#33c7ff;twgist init my-wiki &ndash;&ndash;gistid 0ff830fa237ff39b7de3942536cb08ab@@
 @@color:#ffce33;tiddlywiki my-wiki --init server@@
 Copied edition 'server' to my-wiki
@@ -31,7 +31,8 @@ Your branch is up to date with 'origin/main'.
 nothing to commit, working tree clean
 
 @@color:#ffce33;cd ../..@@
-@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;_@@
+@@color:#00ff00;~/wikis $@@ @@color:#33c7ff;cd my-wiki@@
+@@color:#00ff00;~/wikis/my-wiki $@@ @@color:#33c7ff;_@@
 
 </pre>
 
