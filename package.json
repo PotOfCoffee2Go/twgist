@@ -19,7 +19,8 @@
   "type": "commonjs",
   "main": "twgist.js",
   "bin": {
-    "twgist": "./twgist.js"
+    "twgist": "./twgist.js",
+    "twrepo": "./twrepo.js"
   },
   "directories": {
     "lib": "lib"
