@@ -9,7 +9,7 @@ const {prArgs} = require('./lib/args');
 
 program
 	.name('twgist')
-	.description('CLI to store TiddlyWikis to GitHub Repos')
+	.description('CLI to store TiddlyWikis to GitHub Gists')
 	.version(pkg.version);
 
 const settings = twConfig(program.name());
