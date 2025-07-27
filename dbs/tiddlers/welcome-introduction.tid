@@ -1,10 +1,68 @@
 caption: Introduction
 created: 20250722200626695
-modified: 20250723201228777
+modified: 20250727120619462
 title: welcome-introduction
 type: text/vnd.tiddlywiki
 
 !! Introduction
+TiddlyWiki is my primary document system, so I make a lot of them. May use the wiki as the finished product or as a research document containing notes. There are many that die on the vine, while others stay in use for years.
+
+Have used Gists to hold wikis for quite a while and is especially handy to store 'wiki templates' that I commonly use depending on the purpose of the wiki; some have Shiraz, some Markdown, others the code editor, etc. with the config / control panel settings all setup.
+
+Also they are always available and anyone can access them. They can not write to them, but can create a fork (copy) to their account which always write access to the copy.
+
+ - and can do did it manually:
+
+!!! Create a TiddlyWiki Gist
+
+Create a wiki and fire up the WebServer.
+
+```
+tiddlywiki my-wiki --init server
+tiddlywiki my-wiki --listen
+```
+
+Add content using a browser: `http://localhost:8080`
+
+In another tab create a Gist `https://gist.github.com/<GitHub-User-Name>`
+
+* Press '+' button
+* Using a file manager
+** Go to 'my-wiki/tiddlers' directory
+** Select all files `ctrl-a`
+** Drag/drop all files into the Gist in the browser
+* Save as 'Secret' or 'Public' Gist
+
+The URL in the address bar is the link to the Gist. The URL ends in a long number - that's the Gist-ID
+
+---
+
+!!! Download Gist
+
+To copy the wiki to another directory or computer. Create a wiki, clone the Gist into the tiddlers directory, and fire up the WebServer.
+
+```
+tiddlywiki my-gist-wiki --init server`
+git clone git@gist.github.com:<Gist-ID>.git my-gist-wiki/tiddlers
+tiddlywiki my-gist-wiki --listen
+```
+
+View content `http://localhost:8080` of the my-gist-wiki Gist.
+
+If you are authorised on GitHub [[ssh for example|]] (as the Gist creator) can push wiki changes to the Gist, otherwise the `git push` will fail and the changes are local only.
+
+```
+cd my-wiki/tiddlers
+git add .
+git commit -m "My updates"
+git push
+cd ../..
+```
+
+> I usually delete the `my-gist-wiki/tiddlers/.git` sub-directory if going to keep the changes local (Gist wikis that I use as templates for example) so as not to accidentally push changes up to the Gist. Can always drag/drop tiddlers into a different Gist if want it online 
+
+!!!! Create a fork
+If authorised on GitHub as a different user, can fork someone else's Gist. Go to the Gist and will see a 'Fork' button - press it and the Gist will be copied to your account Giving 
 
 Workflow:
 

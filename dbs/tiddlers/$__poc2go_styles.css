@@ -1,4 +1,4 @@
-.poc2go-console {
+.poc2go-console, pre > code {
   font-family: monospace;
   font-size: .9em;
   background: black;
