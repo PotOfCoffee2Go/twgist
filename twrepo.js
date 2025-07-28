@@ -5,7 +5,7 @@ const program = new commander.Command();
 
 const pkg = require('./package.json');
 const {twConfig} = require('./lib/config');
-const {prArgs} = require('./lib/args');
+const {prgArgs} = require('./lib/args');
 
 program
 	.name('twrepo')
@@ -14,6 +14,6 @@ program
 
 const settings = twConfig(program.name());
 
-prArgs(commander, program, settings);
+prgArgs(commander, program, settings);
 
 program.parse();
