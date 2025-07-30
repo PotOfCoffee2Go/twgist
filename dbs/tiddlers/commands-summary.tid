@@ -1,50 +1,39 @@
 caption: Summary
 created: 20250722230509848
-modified: 20250730044426982
+modified: 20250730181809491
 title: commands-summary
 type: text/vnd.tiddlywiki
 
-!! Summary
-twgist commands are designed to run the TiddlyWiki and Git commands needed to perform the task.
+!!! Command Summary
 
+|mono tc-center tc-max-width tc-table-no-border|k
+| [] optional value | &lt;&gt; required value | [wiki] defaults to current working directory |
 
- (contains the 'tiddlywiki.info' file and the 'tiddlers' sub-directory) The exception is the `twgist init` command which creates the wiki.
-
-
-<pre class="poc2go-console">
-
-| [] optional value | &lt;&gt; required value|
-
-||tc-max-width|k
+|mono tc-center tc-max-width tc-table-no-border|k
 | Command | Type | Name | Description |<|h
 |init | | |Create a TiddlyWiki from a GitHub Gist |<|
 | |required |&lt;wiki&gt; |TiddyWiki server edition wiki directory |<|
 | |required |-g &lt;gistid&gt;, &#45;&#45;gistid &lt;gistid&gt; |Gist ID that contains tiddlers |<|
+| |option |-c, &#45;&#45;copy |Copy wiki without git version control |<|
 | |option |-f, &#45;&#45;force |Overwrite if TiddlyWiki already exists |<|
-
-| Command | Type | Name | Description |<|h
+|&nbsp; |<|<|<|<|
 |stat | | |'git status' of tiddlers in wiki |<|
 | |argument |[wiki] |TiddyWiki server edition wiki directory |<|
-| | |<|<| default: (current working directory)|
 | |option |-s, &#45;&#45;server |Start WebServer after command |<|
 | |option |-p &lt;port&gt;, &#45;&#45;port &lt;port&gt; |WebServer port | default: 8080|
 | |option |-l, &#45;&#45;log |Display recent commits |<|
 |&nbsp; |<|<|<|<|
 |pull | | |Pull wiki tiddlers from GitHub Gist |<|
 | |argument |[wiki] |TiddyWiki server edition wiki directory |<|
-| | |<|<| default: (current working directory)|
 | |option |-s, &#45;&#45;server |Start WebServer after command |<|
 | |option |-p &lt;port&gt;, &#45;&#45;port &lt;port&gt; |WebServer port | default: 8080|
 | |option |-l, &#45;&#45;log |Display recent commits |<|
 |&nbsp; |<|<|<|<|
 |push | | |Push wiki tiddlers to GitHub Gist |<|
 | |argument |[wiki] |TiddyWiki server edition wiki directory |<|
-| | |<|<| default: (current working directory)|
 | |option |-m "&lt;msg&gt;", &#45;&#45;message "&lt;msg&gt;" |Commit message | default: "Wiki Updates"|
 | |option |-s, &#45;&#45;server |Start WebServer after command |<|
 | |option |-p &lt;port&gt;, &#45;&#45;port &lt;port&gt; |WebServer port | default: 8080|
 | |option |-l, &#45;&#45;log |Display recent commits |<|
-|&nbsp; |<|<|<|<|
 
-</pre>
 

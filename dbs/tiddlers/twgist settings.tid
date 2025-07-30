@@ -1,7 +1,8 @@
 created: 20250722044507871
-modified: 20250730074614474
+modified: 20250730182431613
 tags: 
 title: twgist settings
+twgist_b_init_c: no
 twgist_b_init_f: no
 twgist_b_pull_l: no
 twgist_b_pull_p: no
@@ -20,28 +21,37 @@ twgist_s_push_port: 8080
 twgist_s_stat_port: 8080
 type: text/vnd.tiddlywiki
 
-<div class="mono" style="margin: 0 20% 0 0;">
+The settings in the [[twgist settings]] tiddler are read by the twgist CLI and take effect immediately.
 
-|tc-center tc-table-no-border|k
+<$details class="mono" summary="Settings">
+to-do
+</$details>
+
+<$details class="mono" summary="Options">
+
+|mono tc-center tc-max-width tc-table-no-border|k
 |-g |&#45;&#45;gistid |Gist ID that contains tiddlers |
 |-f |&#45;&#45;force |Init over an existing TiddlyWiki |
+|-c |&#45;&#45;copy |copy wiki without git version control |
 |-l |&#45;&#45;log |Display recent commits |
 |-s |&#45;&#45;server |Start WebServer after command |
 |-p |&#45;&#45;port &lt;port&gt;|WebServer port |
 |-m |&#45;&#45;message &lt;msg&gt; |Commit message |
 
+</$details>
 
-|tc-center|k
+|mono tc-center|k
 | Always on |<|<|<|<|<|h
-| command | -f | -l | -s | -p | port |h
-| init |<$checkbox tiddler="twgist settings" field="twgist_b_init_f" checked="yes" unchecked="no"/>| | | |
-| stat | |<$checkbox tiddler="twgist settings" field="twgist_b_stat_l" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_stat_s" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_stat_p" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_stat_port" size="3"/>|
-| pull | |<$checkbox tiddler="twgist settings" field="twgist_b_pull_l" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_pull_s" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_pull_p" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_pull_port" size="3"/>|
-| push | |<$checkbox tiddler="twgist settings" field="twgist_b_push_l" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_push_s" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_push_p" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_push_port" size="3"/>|
+| command | -f | -c | &nbsp;&nbsp; | &nbsp;&nbsp;&nbsp;&nbsp; |h
+| init |<$checkbox tiddler="twgist settings" field="twgist_b_init_f" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_init_c" checked="yes" unchecked="no"/>| |
 
-|tc-center|k
-| Commit |<|h
-|Log |<$edit-text tiddler="twgist settings" field="twgist_l_log_options" size="40"/> |
-|Message | -m <$checkbox tiddler="twgist settings" field="twgist_b_push_m" checked="yes" unchecked="no"/> <$edit-text tiddler="twgist settings" field="twgist_s_commit_msg" size="34"/> |
+|mono tc-center|k
+|&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; | -l | -s | -p | port |h
+| stat |<$checkbox tiddler="twgist settings" field="twgist_b_stat_l" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_stat_s" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_stat_p" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_stat_port" size="3"/>|
+| pull |<$checkbox tiddler="twgist settings" field="twgist_b_pull_l" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_pull_s" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_pull_p" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_pull_port" size="3"/>|
+| push |<$checkbox tiddler="twgist settings" field="twgist_b_push_l" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_push_s" checked="yes" unchecked="no"/>|<$checkbox tiddler="twgist settings" field="twgist_b_push_p" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_push_port" size="3"/>|
 
-</div>
+|mono tc-center|k
+| Commit |<|<|h
+|Message | -m <$checkbox tiddler="twgist settings" field="twgist_b_push_m" checked="yes" unchecked="no"/>|<$edit-text tiddler="twgist settings" field="twgist_s_commit_msg" size="40"/> |
+|Log | |<$edit-text tiddler="twgist settings" field="twgist_l_log_options" size="40"/> |

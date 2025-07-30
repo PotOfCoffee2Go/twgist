@@ -1,11 +1,11 @@
 caption: Commands
 created: 20250722223818690
 list: commands-init commands-status commands-pull commands-push commands-summary
-modified: 20250730060939741
+modified: 20250730181910174
 title: welcome-commands
 type: text/vnd.tiddlywiki
 
-<$details open="yes" summary="Commands">
+<$details summary="Commands">
 
 Start with the <<commandstabs commands-init Init no>> tab and work across the tabs. Various tips and option examples are shown as you progress along. `Summary` has what options are available for each command.
 
