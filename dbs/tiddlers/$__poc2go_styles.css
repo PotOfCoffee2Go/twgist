@@ -4,8 +4,11 @@
   background: black;
   overflow-x: auto;
 }
+.mono {
+  font-family: monospace;
+}
 .tc-tab-buttons {
-  font-size: 103%;
+  font-size: 102%;
 }
 summary {
   font-size: 105%;

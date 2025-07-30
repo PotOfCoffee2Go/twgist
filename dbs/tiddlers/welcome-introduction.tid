@@ -1,13 +1,11 @@
 caption: Introduction
 created: 20250722200626695
-modified: 20250729221909115
+modified: 20250730061736662
 title: welcome-introduction
 type: text/vnd.tiddlywiki
 
-!! Introduction
+!!! Introduction
 TiddlyWiki is my primary document system, so I make a lot of them. May use the wiki as the finished product or as research documents containing notes. There are many that die on the vine, while others stay in use for years.
-
-Have used Gists to hold wikis for quite a while and is especially handy to store 'wiki templates' with ControlPanel settings that I commonly use depending on the purpose of the wiki; some with Shiraz, some Markdown, others the code editor, etc.
 
 Also they are always available and anyone can access them. They can not push to them, but can create a fork (copy) to their account and push to their copy.
 

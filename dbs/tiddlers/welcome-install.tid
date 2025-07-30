@@ -1,13 +1,13 @@
 caption: Install
 created: 20250722224744935
-modified: 20250723095557456
+modified: 20250730062851548
 title: welcome-install
 type: text/vnd.tiddlywiki
 
-!! Install
+!!! Install
 The tool is designed to be globally installed allowing the 'twgist' command to be available regardless of where wikis are located on your devices.
 
-Install with NPM, then run `twgist` for the first time which will build a sub-directory '.twgist' in your user home directory. This directory
+Install with NPM, then run `twgist` for the first time which will build a sub-directory @@.mono '.twgist'@@ in your user home directory. This directory
 holds this wiki and settings. A summary of twgist commands is also displayed.
 
 <pre class="poc2go-console">
@@ -18,6 +18,7 @@ twgist@@
 </pre>
 
 > Linux users may need to prefix the NPM install/uninstall with `sudo` depending on your system permission settings.
+
 > For Windows the system has been tested using PowerShell.
 
 

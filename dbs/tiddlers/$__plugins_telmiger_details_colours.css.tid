@@ -1,6 +1,6 @@
 created: 20180925155320737
 creator: Thomas Elmiger
-modified: 20250729215157576
+modified: 20250730045139015
 modifier: Thomas Elmiger
 tags: $:/tags/Stylesheet
 title: $:/plugins/telmiger/details/colours.css
@@ -10,7 +10,7 @@ type: text/vnd.tiddlywiki
 
 details {
    background-color: <<colour background>>;
-   color: <<colour sidebar-tab-foreground-selected>>;
+   color: <<colour foreground>>;
 }
 
 details summary {

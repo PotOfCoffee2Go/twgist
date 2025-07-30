@@ -1,9 +1,10 @@
 caption: Settings
 created: 20250722202011277
-modified: 20250723101904843
+modified: 20250730070927918
 title: welcome-settings
 type: text/vnd.tiddlywiki
 
-!! Settings
+!!! Settings
 
 {{twgist settings}}
+

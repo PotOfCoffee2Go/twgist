@@ -1,5 +1,32 @@
 caption: Use Cases
 created: 20250729212848120
-modified: 20250729212848120
+modified: 20250730081010191
 title: welcome-usecases
 type: text/vnd.tiddlywiki
+
+!!! Use cases
+
+<$details summary="Wiki Templates">
+
+Especially handy to store @@.mono 'wiki templates'@@ with the ControlPanel settings you commonly use when starting a new wikis. Depending upon the purpose of the wiki; some with Shiraz, some with Markdown, others with a code the code editor, etc.
+
+</$details>
+
+<$details summary="Journals">
+
+The Gist can be updated from multiple devices. Can use any device which can run TiddlyWiki on Node.js, Create the wiki and populate with tiddlers from the Gist, update and push.
+
+</$details>
+
+<$details summary="Version Control">
+
+to-do
+
+</$details>
+
+<$details summary="Sharing">
+
+to-do
+
+</$details>
+

@@ -1,6 +1,6 @@
 created: 20250722043330767
-modified: 20250722213803008
+modified: 20250730070015289
 title: $:/SiteSubtitle
 type: text/vnd.tiddlywiki
 
-@@font-size:1.3em;padding:0 25%; CLI tool@@<br>GitHub Gists as TiddlyWiki tiddler stores<br>  @@padding:0 18%; {{$:/core/images/github|18px}} See on [[GitHub|https://github.com/PotOfCoffee2Go/twgist]] @@
+@@font-size:1.3em;padding:0 25%; CLI tool@@<br>GitHub Gists as TiddlyWiki tiddler stores<br>  @@padding:0 18%; {{$:/core/images/github|18px}} See on [[GitHub|https://github.com/PotOfCoffee2Go/twgist]] @@<br>@@padding:0 14%;font-size:110%;.mono <<welcometabs welcome-settings "twgist settings">>@@
